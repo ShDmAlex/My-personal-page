@@ -5,6 +5,7 @@ class AboutMe(models.Model):
     birthplace = models.CharField(max_length=255, blank=True)
     bio = models.TextField()
     github = models.URLField()
+    team = models.URLField(blank=True)
     photo = models.ImageField(upload_to='about/')
     school = models.CharField(max_length=255)
     hobbies = models.TextField(default="Информация отсутсвует")

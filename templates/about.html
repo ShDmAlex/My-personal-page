@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load custom_filters %}
-
 {% block content %}
 <div class="about-container">
     <h1 class="mb-4">Обо мне</h1>
@@ -37,6 +36,9 @@
                     <div class="card-body">
                         <h2 class="section-title">🎨 Мои увлечения</h2>
                         <p class="fs-5 lh-lg">{{ about.hobbies }}</p>
+                        <a href="{{ about.team }}" target="_blank" class="btn btn-dark btn-lg">
+                            <i class="bi bi-github"></i> arrancars
+                        </a>
                     </div>
                 </div>
             </div>
